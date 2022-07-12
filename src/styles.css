@@ -1,1 +1,155 @@
 /* You can add global styles to this file, and also import other style files */
+:root
+{
+  --main-background:rgb(0, 0, 97);
+  --blue: rgb(19, 19, 190);
+  --darkshadow: rgba(0, 0, 0,0.3);
+  --lightshadow: rgba(237, 217, 217, 0.1);
+  --black: black;
+  --white: white;
+  --grey: grey;
+
+
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body
+{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-background);
+  display: flex ;
+  justify-content: center ;
+  align-items: center;
+}
+.container
+{
+  width: 300px;
+  height: 80vh;
+  background-color: var(--blue);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px var(--darkshadow);
+}
+.upperdata
+{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.upperdata img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.lowerdata
+{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.weatherdata
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.location
+{
+  color: var(--black);
+  font-size: 2em;
+  font-weight: 200;
+  text-align: center;
+}
+.temperature
+{
+  color: var(--black);
+  font-size: 4em;
+  font-weight: 400;
+  text-align: center;
+}
+.moreinfo
+{
+  color:var(--white);
+}
+.moreinfo-container
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex:1;
+  background-color: var(--lightshadow);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.infoblock
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.infoblock-label
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+.infoblock-label img
+{
+  width: 3em;
+}
+.infoblock-label span
+{
+  color: var(--white);
+  font-size: 1em;
+}
+.infoblock-value
+{
+  color: var(--white);
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.search
+{
+  text-align: center;
+  margin-bottom: 1em;;
+}
+.search input{
+  background-color: var(--lightshadow);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 1em;
+  color: var(--grey);
+  font-size: 1em;
+  text-align: center;
+}
+
